@@ -19,6 +19,7 @@ public void mover(){
 this.posicion.y+=this.velocidad.y;
 }else{
   this.posicion.y=0;
+  this.posicion.x=random(0,width);
 }
 }
 }

@@ -2,6 +2,7 @@ class Nube{
 public PVector posicion;
   public PImage imagen;
   public PVector velocidad;
+  public int inc;
   
   //Connstructor
   
@@ -22,6 +23,8 @@ public void mover(){
 this.posicion.x+=this.velocidad.x;
 }else{
   this.posicion.x=0;
+  if(this.posicion.x>=height-100||this.posicion.x<=100){
+    inc=inc*-1;}
   
   
 }
